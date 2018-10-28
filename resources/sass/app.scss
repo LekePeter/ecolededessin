@@ -1,0 +1,103 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+/*
+// Team
+/*/
+
+.team-item,
+.team-wrap,
+.team-content,
+.team-content-social {
+  transition:  all .7s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+.team-item {
+  position: relative;
+  border-radius: .1875rem;
+  box-shadow: 0 20px 70px 0 rgba(0, 0, 0, .15);
+  margin: 0 0 30px;
+
+  img {
+    border-radius: .1875rem;
+    width: 100%;
+  }
+}
+
+.team-wrap {
+  background: rgba(#222, 0.6);
+  position: absolute;
+  border-radius: .1875rem;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.team-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  transform: translateY(-(10px * 2));
+}
+
+.team-role {
+  font-size: rem(14);
+  opacity: .6;
+}
+
+.team-name,
+.team-role {
+  color: #fff;
+}
+
+.team-content-social {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  transform: translateY(-(10px * 2));
+  position: absolute;
+  right: 0;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 5px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        opacity: .6;
+      }
+    }
+  }
+}
+
+.team-item:hover {
+  transform: translateY(10px);
+
+  .team-wrap {
+    opacity: 1;
+  }
+
+  .team-content,
+  .team-content-social {
+    transform: translateY(0);
+  }
+}
+/* Team CSS*/
