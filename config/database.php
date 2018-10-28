@@ -1,5 +1,5 @@
 <?php
-    $dbopts = parse_url(env('DATABASE_URL'));
+$dbopts = parse_url(env('DATABASE_URL'));
 return [
     
 
@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
 
     'connections' => [
   // ...
-    'pgsql_heroku' => [
+    'pgsql' => [
         'driver' => 'pgsql',
         'host' => $dbopts['host'],
         'port' => $dbopts['port'],
@@ -69,7 +69,7 @@ return [
             'engine' => null,
         ],
 
-        'pgsql' => [
+        'pgsql_' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
