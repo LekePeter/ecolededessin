@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/dashboard.css">    
-    <title>{{config('app.name')}}</title>
+    <title>{{config('app.name', 'Ecolededessin')}}</title>
 </head>
 <body>
     <section>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-            <a class="navbar-brand mr-1" href="{{url('dashboard')}}">{{config('app.name')}}</a>
+            <a class="navbar-brand mr-1" href="{{url('dashboard')}}">{{config('app.name', 'Ecolededessin')}}</a>
             <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
                 <i class="fas fa-bars"></i>
             </button>
