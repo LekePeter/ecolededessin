@@ -13,7 +13,7 @@
 
 Route::get('/', 'PageController@index');
 Route::get('service', 'PageController@service');
-Route::get('project', 'PageController@projects');
+Route::get('projects', 'PageController@projects');
 Route::get('project/{id}', 'PageController@project');
 Route::get('contact', 'PageController@contact');
 Route::get('about', 'PageController@about');

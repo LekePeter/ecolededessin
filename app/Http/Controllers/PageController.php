@@ -18,7 +18,7 @@ class PageController extends Controller
 
     public function projects(){
         $projects = Project::all();
-        return view('pages.project')->with('projects', $projects);
+        return view('pages.projects')->with('projects', $projects);
     }
 
     public function project($id){

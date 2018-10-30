@@ -22,8 +22,8 @@
                                                 </div>
                                                 <div class="jamasshead-description">
                                                     <br>
-                                                    <button class="btn btn-primary">Project & Events </button>
-                                                    <button class="btn btn-primary">Services </button>
+                                                    <a class="btn btn-primary" href="projects">Project & Events </a>
+                                                    <a class="btn btn-primary" href="service">Services </a>
                                                 </div>
                                             </div>
                                         </div>
