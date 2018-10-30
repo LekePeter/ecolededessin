@@ -379,4 +379,7 @@
       width: calc(100% - 90px);
     }
   }
-  
+
+.cke_reset{
+  width: 100% !important;
+}

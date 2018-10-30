@@ -13,12 +13,14 @@
 
 Route::get('/', 'PageController@index');
 Route::get('service', 'PageController@service');
-Route::get('project', 'PageController@project');
+Route::get('project', 'PageController@projects');
+Route::get('project/{id}', 'PageController@project');
 Route::get('contact', 'PageController@contact');
 Route::get('about', 'PageController@about');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/dashboard/add', 'DashboardController@add');
-Route::get('/dashboard/show', 'DashboardController@show');
+Route::get('/dashboard/projects', 'DashboardController@projects');
+Route::get('/dashboard/project/{id}', 'DashboardController@project');
 Route::post('/dashboard/store', 'DashboardController@store');
 
 Auth::routes();

@@ -1,16 +1,31 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,500italic,700italic,900italic');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
 
+// http://fonts.googleapis.com/css?family=Roboto:400"
+// http://fonts.googleapis.com/css?family=Roboto:100"
+// http://fonts.googleapis.com/css?family=Roboto:100italicc"
+// http://fonts.googleapis.com/css?family=Roboto:300"
+// http://fonts.googleapis.com/css?family=Roboto:300italic"
+// http://fonts.googleapis.com/css?family=Roboto:400italic"
+// http://fonts.googleapis.com/css?family=Roboto:500"
+// http://fonts.googleapis.com/css?family=Roboto:700"
+// http://fonts.googleapis.com/css?family=Roboto:500italic"
+// http://fonts.googleapis.com/css?family=Roboto:700italic"
+// http://fonts.googleapis.com/css?family=Roboto:900"
+// http://fonts.googleapis.com/css?family=Roboto:900italic
 // Variables
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
-
+// Animate on scroll
+@import '~aos/dist/aos.css';
 /*
 // Team
 /*/

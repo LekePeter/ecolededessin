@@ -1,0 +1,121 @@
+
+body{
+    font-family: sans-serif, Roboto,Arial !important;
+    color: #788487;
+    font-size: 1.125rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+/*   margin-bottom: $headings-margin-bottom;
+//   font-family: $headings-font-family;
+//   font-weight: $headings-font-weight;
+//   line-height: $headings-line-height; */
+  color: #222;
+}
+
+.jumbotron{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.nav-bar-bg{
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.btn{
+    padding: 1.125rem 2rem;
+}
+
+.circle .circle-content{border:solid 10px #fc615d;display:block;height:120px;margin:20px
+    auto 0;width:120px;-webkit-border-radius:120px;-moz-border-radius:120px;border-radius:120px}.circle .circle-content
+    h4{font-family:'novecento_widedemibold',sans-serif;font-size:14px;line-height:120px;margin:0;padding:0;text-align:center}.circle .circle-content.blue{border-color:#0093C3}.circle .circle-content.yellow{border-color:#fc0}.circle .circle-content.black{border-color:#000}.circle .circle-content.red{border-color:#fc615d}
+
+/* Service */
+
+.wrap{
+    margin-top:10%;
+  }
+  
+  .btn-service{
+    background-color: #ffa500;
+    color: white;
+  }
+  .how-section1{
+    margin-top:-20%;
+    padding: 10%;
+  }
+  .how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+  }
+  .how-section1 .row
+  {
+    margin-top: 10%;
+  }
+  .how-img 
+  {
+    text-align: center;
+  }
+  .how-img img{
+    width: 40%;
+  }
+  
+  .parallax{
+    padding: auto;
+    background-image:none;
+    background-color: black;
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .home{
+      background-image: url("../img/j3.jpg");
+      min-height: 500px; 
+      padding-top: 5%;
+  
+      /* background: #0F2027; */  
+  }
+  
+  .about{
+    background-image: url("../img/j4.jpg");
+    min-height: 400px; 
+    padding-top: 5%;
+  
+    /* background: #0F2027; */  
+  }
+  
+  .project{
+    background-image: url("../img/j6.jpg");
+    min-height: 400px; 
+    padding-top: 5%;
+  
+    /* background: #0F2027; */  
+  }
+  
+  .service{
+    background-image: url("../img/j4.jpg");
+    min-height: 400px; 
+    padding-top: 5%;
+  
+    /* background: #0F2027; */  
+  }
+  
+  
+  .wrap-text{
+    padding-top: 5%;
+  }  

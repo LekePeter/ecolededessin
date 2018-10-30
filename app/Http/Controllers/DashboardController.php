@@ -34,10 +34,16 @@ class DashboardController extends Controller
         return view('dashboard.add');
     }
 
-    public function show()
+    public function projects()
     {
         $projects = Project::all();
-        return view('dashboard.show')->with('projects', $projects);
+        return view('dashboard.projects')->with('projects', $projects);
+    }
+
+    public function project($id)
+    {
+        $project = Project::find($id);
+        return view('dashboard.project')->with('project', $project);
     }
     /**
      * Render an exception into an HTTP response.
@@ -51,14 +57,28 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
+            'subtitle' => 'required',
             'body' => 'required'
         ]);
 
+        if($request->hasFile('image')){
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('image')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+            $path = $request->file('image')->storeAs('public/images', $fileNameToStore);
+        }else{
+            $fileNameToStore = "noImage.png";
+        }
+
         $project = new Project;
         $project->title = $request->input('title');
+        $project->subtitle = $request->input('subtitle');
+        $project->extract = $request->input('extract');
+        $project->summary = $request->input('summary');
         $project->body = $request->input('body');
-        $project->img_url = "noImage.png";
+        $project->img_url = $fileNameToStore;
         $project->save();
-        return redirect('/dashboard/add')->with('success', 'Post created');
+        return redirect('/dashboard/add')->with('success', 'Project created successfully');
     }
 }

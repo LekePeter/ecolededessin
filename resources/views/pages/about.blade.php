@@ -7,7 +7,7 @@
         </div>
     </section>
 
-    <section>
+    <section class=" item-page  clearfix">
         <div class="container">
             <div class="m-auto text-center">
                 <h2 class="mt-5 my-5 display-4">Ecole de Dessin.</h2>

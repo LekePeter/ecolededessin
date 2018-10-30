@@ -1,82 +1,79 @@
 @extends('layouts.admin')
 
 @section('content')
-    <section>
-        
+ 
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3" data-aos="flip-left" style="max-width: 18rem;">
+                            <div class="card-header">Projects & Events</div>
+                            <div class="card-body">
+                                <h5 class="card-title">50 Projects Done</h5>
+                                <p class="card-text"><?php date('Y')?></p>
+                            </div>
+                        </div>
+                    </div>
 
-<div id="wrapper">
+                    <div class="col">
+                        <div class="card text-white bg-primary mb-3" data-aos="zoom-out" style="max-width: 18rem;">
+                            <div class="card-header">Sponsor</div>
+                            <div class="card-body">
+                                <h5 class="card-title">10 project sponsored</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="dashboard">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Projects</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="{{url('dashboard/show')}}">View</a>
-            <a class="dropdown-item" href="{{url('dashboard/add')}}">Add</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="edit">Edit</a>
-            <a class="dropdown-item" href="delete">Delete</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-            <i class="fas fa-calendar"></i>
-            <span>Events</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-file"></i>
-            <span>Records</span></a>
-        </li>
-    </ul>
+                    <div class="col">
+                        <div class="card text-white bg-danger mb-3" data-aos="zoom-in" style="max-width: 18rem;">
+                            <div class="card-header">Last Project</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Frank Edo</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
 
-    <div id="content-wrapper">
+                    <div class="col">
+                        <div class="card text-white bg-secondary mb-3" data-aos="flip-right" style="max-width: 18rem;">
+                            <div class="card-header">Team</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Team of Four</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="container-fluid">
-            @include('inc.messages') 
-            @yield('dash_content')
+                </div>
+            </section>
+            <section class="mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card text-white bg-info mb-3" data-aos="flip-right">
+                            <div class="card-header">Coming up events</div>
+                            <div class="card-body">
+                                <p class="card-text">1. Wole Soyinka: Time to life</p>
+                                <p class="card-text">2. Femi Falana: Take on talk</p>
+                                <p class="card-text">3. Wole Soyinka: Time to life</p>
+                                <p class="card-text">4. Femi Falana: Take on talk</p>
+                                <p class="card-text">5. Wole Soyinka: Time to life</p>
+                                <p class="card-text">6. Art of June 12</p>
+                            </div>
+                        </div>
+                    </div>
 
-        </div>
-        <!-- /.container-fluid -->
+                    <div class="col-md-3 offset-md-3">
+                        <div class="card text-white bg-success mb-3" data-aos="flip-right">
+                            <div class="card-header">Past events</div>
+                            <div class="card-body">
+                                <p class="card-text">1. Wole Soyinka: Time to life</p>
+                                <p class="card-text">2. Femi Falana: Take on talk</p>
+                                <p class="card-text">3. Wole Soyinka: Time to life</p>
+                                <p class="card-text">4. Femi Falana: Take on talk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    </div>
-    <!-- /.content-wrapper -->
-
-</div>
-<!-- /#wrapper -->
-
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-<i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">×</span>
-      </button>
-    </div>
-    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-    <div class="modal-footer">
-      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-      <a class="btn btn-primary" href="login.html">Logout</a>
-    </div>
-  </div>
-</div>
-</div>
-
-    </section>
 @endsection
