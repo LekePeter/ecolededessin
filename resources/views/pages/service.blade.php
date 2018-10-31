@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<link rel="stylesheet" href="css/app.css">
 <div class="parallax service text-center">
     <div class="container">
         <h1 class="display-4 text-white">Your satisfaction <br>our priority, a feel of inspiration</h1>

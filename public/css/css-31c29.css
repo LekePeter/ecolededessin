@@ -3,25 +3,25 @@
 /*===============================
 /templates/ja_fixel/fonts/novecentowide/stylesheet.css
 ================================================================================*/
-@font-face{font-family:'novecento_wide_bookbold';src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-bold-webfont.eot');src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-bold-webfont.woff') format('woff'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-bold-webfont.ttf') format('truetype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-bold-webfont.svg#novecento_wide_bookbold') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widebook';src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-book-webfont.eot');src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-book-webfont.woff') format('woff'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-book-webfont.ttf') format('truetype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-book-webfont.svg#novecento_widebook') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widedemibold';src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-demibold-webfont.eot');src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-demibold-webfont.woff') format('woff'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-demibold-webfont.ttf') format('truetype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-demibold-webfont.svg#novecento_widedemibold') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widelight';src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-light-webfont.eot');src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-light-webfont.eot?#iefix') format('embedded-opentype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-light-webfont.woff') format('woff'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-light-webfont.ttf') format('truetype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-light-webfont.svg#novecento_widelight') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widemedium';src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-medium-webfont.eot');src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-medium-webfont.woff') format('woff'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-medium-webfont.ttf') format('truetype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-medium-webfont.svg#novecento_widemedium') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widenormal';src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-normal-webfont.eot');src:url('/templates/ja_fixel/fonts/novecentowide/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-normal-webfont.woff') format('woff'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-normal-webfont.ttf') format('truetype'),
-url('/templates/ja_fixel/fonts/novecentowide/novecentowide-normal-webfont.svg#novecento_widenormal') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'novecento_wide_bookbold';src:url('fonts/novecentowide/novecentowide-bold-webfont.eot');src:url('fonts/novecentowide/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/novecentowide/novecentowide-bold-webfont.woff') format('woff'),
+url('fonts/novecentowide/novecentowide-bold-webfont.ttf') format('truetype'),
+url('fonts/novecentowide/novecentowide-bold-webfont.svg#novecento_wide_bookbold') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widebook';src:url('fonts/novecentowide/novecentowide-book-webfont.eot');src:url('fonts/novecentowide/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/novecentowide/novecentowide-book-webfont.woff') format('woff'),
+url('fonts/novecentowide/novecentowide-book-webfont.ttf') format('truetype'),
+url('fonts/novecentowide/novecentowide-book-webfont.svg#novecento_widebook') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widedemibold';src:url('fonts/novecentowide/novecentowide-demibold-webfont.eot');src:url('fonts/novecentowide/novecentowide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/novecentowide/novecentowide-demibold-webfont.woff') format('woff'),
+url('fonts/novecentowide/novecentowide-demibold-webfont.ttf') format('truetype'),
+url('fonts/novecentowide/novecentowide-demibold-webfont.svg#novecento_widedemibold') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widelight';src:url('fonts/novecentowide/novecentowide-light-webfont.eot');src:url('fonts/novecentowide/novecentowide-light-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/novecentowide/novecentowide-light-webfont.woff') format('woff'),
+url('fonts/novecentowide/novecentowide-light-webfont.ttf') format('truetype'),
+url('fonts/novecentowide/novecentowide-light-webfont.svg#novecento_widelight') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widemedium';src:url('fonts/novecentowide/novecentowide-medium-webfont.eot');src:url('fonts/novecentowide/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/novecentowide/novecentowide-medium-webfont.woff') format('woff'),
+url('fonts/novecentowide/novecentowide-medium-webfont.ttf') format('truetype'),
+url('fonts/novecentowide/novecentowide-medium-webfont.svg#novecento_widemedium') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'novecento_widenormal';src:url('fonts/novecentowide/novecentowide-normal-webfont.eot');src:url('fonts/novecentowide/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/novecentowide/novecentowide-normal-webfont.woff') format('woff'),
+url('fonts/novecentowide/novecentowide-normal-webfont.ttf') format('truetype'),
+url('fonts/novecentowide/novecentowide-normal-webfont.svg#novecento_widenormal') format('svg');font-weight:normal;font-style:normal}
 
 
 /*===============================

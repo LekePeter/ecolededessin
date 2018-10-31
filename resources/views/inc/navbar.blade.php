@@ -22,13 +22,13 @@
                           <a class="" href="{{url('/')}}">Home </a>
                       </li>
                       <li  data-id="529" data-level="1">
-                          <a class="" href="about">About Us</a>
+                          <a class="" href="#">About Us</a>
                       </li>
                       <li  data-id="529" data-level="1">
-                          <a class="" href="blog">Blog </a>
+                          <a class="" href="#">Blog </a>
                       </li>
                       <li  data-id="479" data-level="1">
-                          <a class="" href="contact"  >Contact</a>
+                          <a class="" href="#"  >Contact</a>
                       </li>
                   </ul>
               </div>

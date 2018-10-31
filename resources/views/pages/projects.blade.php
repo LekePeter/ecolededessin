@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<link rel="stylesheet" href="css/bootstrap-grid.css">            
     <section>
         <div class="parallax project text-center">
             <div class="container">
@@ -16,7 +17,7 @@
                     @foreach($projects as $project)     
                         <div class="col-xs-4 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" src="{{asset('img/project').'/'.$project->img_url}}" alt="Card image cap">
+                                <img class="card-img-top" src="{{asset('img/project').'/'.$project->img1}}" alt="Card image cap">
                                 <div class="card-body">
                                     <h4 class="card-title">{{$project->title}}</h4>
                                     <p class="card-text">{{$project->body}}</p>

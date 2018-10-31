@@ -10,11 +10,13 @@
     <!--<![endif]-->
     <head>
         <base href="{{asset('')}}" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="keywords" content=" market assessment, marketing plan &amp; strategy development, market research, strategic brand development, customer retainship strategy, business development, web development, goalins.com, wilson ellis" />
         <meta name="description" content="We provide solutions from strategy development to implementation that delivers value to our clients in the areas of; market assessment, marketing plan &amp; strategy development, " />
         <meta name="generator" content="Joomla! - Open Source Content Management" />
         <title>Welcome to Ecole De Dessin Website</title>
+        <link rel="stylesheet" href="css/app.css">        
         <link href="http://ecolededessin.org/?view=featured" rel="canonical" />
         <link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
         <link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
@@ -25,7 +27,6 @@
         <link rel="stylesheet" href="css/css-7f05b.css" type="text/css" />
         <link rel="stylesheet" href="css/css-31c29.css" type="text/css" />
         <link rel="icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/main.css">    
         <title>{{config('app.name')}}</title>
         <script src="js/mootools-core.js" type="text/javascript"></script>

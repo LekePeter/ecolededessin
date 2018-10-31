@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<link rel="stylesheet" href="css/bootstrap-grid.css">            
 
     <section>
         <div class="jumbotron text-center">

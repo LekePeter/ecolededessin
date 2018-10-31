@@ -52,12 +52,7 @@
                         <div class="card text-white bg-info mb-3" data-aos="flip-right">
                             <div class="card-header">Coming up events</div>
                             <div class="card-body">
-                                <p class="card-text">1. Wole Soyinka: Time to life</p>
-                                <p class="card-text">2. Femi Falana: Take on talk</p>
-                                <p class="card-text">3. Wole Soyinka: Time to life</p>
-                                <p class="card-text">4. Femi Falana: Take on talk</p>
-                                <p class="card-text">5. Wole Soyinka: Time to life</p>
-                                <p class="card-text">6. Art of June 12</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -66,10 +61,7 @@
                         <div class="card text-white bg-success mb-3" data-aos="flip-right">
                             <div class="card-header">Past events</div>
                             <div class="card-body">
-                                <p class="card-text">1. Wole Soyinka: Time to life</p>
-                                <p class="card-text">2. Femi Falana: Take on talk</p>
-                                <p class="card-text">3. Wole Soyinka: Time to life</p>
-                                <p class="card-text">4. Femi Falana: Take on talk</p>
+                                
                             </div>
                         </div>
                     </div>

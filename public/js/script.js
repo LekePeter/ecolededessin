@@ -611,7 +611,7 @@ var Fixel = Fixel || {};
 				loading: {
 					finished: undefined,
 					finishedMsg: T3JSVars.finishedMsg,
-					img: T3JSVars.tplUrl + '/images/ajax-load.gif',
+					img: T3JSVars.tplUrl + 'images/ajax-load.gif',
 					msg: null,
 					msgText: T3JSVars.msgText,
 					selector: null,

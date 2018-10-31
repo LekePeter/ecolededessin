@@ -22,8 +22,8 @@
                                                 </div>
                                                 <div class="jamasshead-description">
                                                     <br>
-                                                    <a class="btn btn-primary" href="projects">Project & Events </a>
-                                                    <a class="btn btn-primary" href="service">Services </a>
+                                                    <a class="btn btn-primary" href="#">Project & Events </a>
+                                                    <a class="btn btn-primary" href="#">Services </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -39,15 +39,15 @@
                                 <div class="item-image-wrap flipper">
                                     <div class="item-image front">
                                         <a class="article-link" href="/88-demo-contents/print-design/126-a-day-with-frank-edoho" title="A day with Frank Edoho">
-                                        <img title="A day with Frank Edoho" src="storage/images/{{$project->img_url}}" alt="A day with Frank Edoho" />
+                                        <img title="A day with Frank Edoho" src="storage/images/{{$project->img1}}" alt="A day with Frank Edoho" style="height:100%;"/>
                                         </a>
                                     </div>
                                     <div class="item-desc back">
                                         <h2 class="article-title">
-                                            <a class="article-link" href="/88-demo-contents/print-design/126-a-day-with-frank-edoho">{{$project->title}}</a>
+                                            <a class="article-link" href="/88-demo-contents/print-design/126-a-day-with-frank-edoho">{{str_limit($project->title, 40)}}</a>
                                         </h2>
                                         <section class="article-intro clearfix">
-                                            <p class="MsoNormal">{!!str_limit($project->body, 50)!!}</p>
+                                            <p class="MsoNormal">{!!str_limit($project->body, 20)!!}</p>
                                         </section>
                                         <div class="jamasshead-description" style="text-align: center;">
                                             <br>

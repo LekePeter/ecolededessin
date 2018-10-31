@@ -1,35 +1,63 @@
 @extends('layouts.app')
 @section('content')
-    <section>
+    <!-- <section>
         <div class="about parallax text-center">
             <h1 class="display-4 text-white">About Us</h1>
             <p class="lead mb-5 text-white">As the saying goes, "Time is Money" we don't want you lossing anything <br>so we work with the specified time to meet your deadline.</p>
         </div>
-    </section>
+    </section> -->
+<link rel="stylesheet" href="css/bootstrap-grid.css">            
+<section>
+<div class="row">
+	<div id="t3-content" class="t3-content span12">
+		<div class="main-content">
+			<div id="system-message-container" style="display: none;">
+				<div id="system-message"></div>
+			</div>
+			<div class="item-page  clearfix">
+				<!-- Article -->
+				<article>
+					<header class="article-header clearfix">
+						<h1 class="article-title">
+						</h1>
+					</header>
+					<!-- Aside -->
+					<aside class="article-aside clearfix">
+						<dl class="article-info pull-left">
+							<dd class="published"> 
+			</dd>
+						</dl>
+					</aside>
+					<!-- //Aside -->
+					<section class="article-content clearfix" style="margin-left: 0">
+						<div class="box clearfix">
+                        </div>
+</div>
+					
+					
 
-    <section class=" item-page  clearfix">
-        <div class="container">
-            <div class="m-auto text-center">
-                <h2 class="mt-5 my-5 display-4">Ecole de Dessin.</h2>
-                <div class="row">
-                    <div class="col-md-10 col-lg-6 text-justify">                    
-                        <p class="lead">is a French word meaning “School of Art”. We are an Exponential Marketing Consulting firm, which is a specialised marketing consultancy helping small to medium enterprises, corporate companies develop and deliver practical growth strategies that achieve bottom-line outcomes. Our mission to help clients unleash the maximum market potentials that exist in the market.</p>
-                        <p class="lead">They are experiencing events like new product development and roll-out, geographic expansion, brand repositioning that puts an amount of stress on management.</p>
-                        <p class="lead">We provide solutions from strategy development to implementation that delivers value to our clients in the areas of; market assessment, marketing plan & strategy development, market research, strategic brand development, customer retainship strategy, business development, turnaround & growth strategy, mentorship & coaching and capital formation.</p>
-                    </div>
-                    <div class="col-md-10 col-lg-6 text-justify">                    
-                        <p class="lead">We also have significant and proven experience building and growing both new and existing businesses in a variety of industries including retail and consumer products, healthcare, manufacturing, high-tech and ICT and professional firms.</p>
-                        <p class="lead">Ecole de Dessin is a multiple Guinness World Record holder with a wealth of proven expertise in world class events and PR activation conferences, exhibitions, workshops, launches, corporate theatre, and hospitality, in this regards, it is set up with the aim of strategically inputting an event in the mind of people, using children art as the major communicative tool for social economic change in our society.Our team offers the creative vision, professionalism, and event expertise to create winning events—with a constant eye towards detail, quality, originality, and results.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
-    
+</section>
+
     <section>
-        <div class="container">
-        <div class="row">
+    <div class="t1-content span12">
+            <div class="item-page  clearfix">
+                <div class="article-content clearfix">
+                    <div class="container" style="padding:3em !important;">
+                        <div class="col-xs-4 col-lg-10">
+                            <h2 class="mt-5 my-5 display-4">Ecole de Dessin.</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 text-justify">                    
+                                    <p class="lead">is a French word meaning “School of Art”. We are an Exponential Marketing Consulting firm, which is a specialised marketing consultancy helping small to medium enterprises, corporate companies develop and deliver practical growth strategies that achieve bottom-line outcomes. Our mission to help clients unleash the maximum market potentials that exist in the market.</p>
+                                    <p class="lead">They are experiencing events like new product development and roll-out, geographic expansion, brand repositioning that puts an amount of stress on management.</p>
+                                    <p class="lead">We provide solutions from strategy development to implementation that delivers value to our clients in the areas of; market assessment, marketing plan & strategy development, market research, strategic brand development, customer retainship strategy, business development, turnaround & growth strategy, mentorship & coaching and capital formation.</p>
+                                </div>
+                                <div class="col-md-6 col-lg-6 text-justify">                    
+                                    <p class="lead">We also have significant and proven experience building and growing both new and existing businesses in a variety of industries including retail and consumer products, healthcare, manufacturing, high-tech and ICT and professional firms.</p>
+                                    <p class="lead">Ecole de Dessin is a multiple Guinness World Record holder with a wealth of proven expertise in world class events and PR activation conferences, exhibitions, workshops, launches, corporate theatre, and hospitality, in this regards, it is set up with the aim of strategically inputting an event in the mind of people, using children art as the major communicative tool for social economic change in our society.Our team offers the creative vision, professionalism, and event expertise to create winning events—with a constant eye towards detail, quality, originality, and results.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event text-center m-auto">
@@ -67,22 +95,14 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
 
-    <section>
-    <div class="container">        
         <div class="row">
             <div class="col-md-10 col-lg-6 m-auto text-center">
                 <h2 class="mt-5 my-5 display-4">Why work with us?</h2>   
             </div>
         </div>
-    </div>
-    </section>  
 
-    <section>
-        <div class="container">
-            <div class="row">
+        <div class="row">
                 <div class="item col-xs-4 col-lg-4">
                     <div class="img-event text-center m-auto">
                         <img class="group list-group-image img-fluid" src="{{asset('img/time.jpg')}}" alt="" />
@@ -116,23 +136,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section>
-    <div class="container text-center">        
-        <div class="row">
+            <div class="row">
             <div class="col-md-10 col-lg-6 m-auto">
                 <h2 class="mt-5 my-4 display-4">Technical Experience</h2>
                 <p>Lets throw a trackie dacks also it'll be gutta. You little ripper avos flamin lets throw a lizard drinking. Gutful of jug where as busy as a big smoke.</p>  
             </div>
         </div>
-    </div>
-    </section>
 
-    <section>
-        <div class="container">
-            <div class="box circle clearfix">
+        <div class="box circle clearfix">
                 <div class="container text-center">
                 <div class="row">
                     <div class="col-xs-4 col-lg-4">
@@ -169,24 +181,17 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section>
-    <div class="container">        
-        <div class="row">
+            <div class="row">
             <div class="col-md-10 col-lg-6 m-auto text-center">
                 <h2 class="mt-5 my-4 display-4">Meet the Awesome People</h2>
                 <p class="my-4">Our team is made up of qualified people who can deliver in their various fields, that is what make us special, every single one of us contributes to make you dream a reality.</p>  
             </div>
         </div>
-    </div>
-    </section>
 
 
-    <section>
-        <div class="container">
-        <div class="row">
+
+            <div class="row">
             <div class="col-md-4">
                 <div class="team-item">
                     <div class="team-image"><img src="{{ asset('img/team/2.jpg') }}" alt="">
@@ -302,6 +307,57 @@
                 </div>
             </div>
         </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    
+    </section>  
+    
+    <section>
+        <div class="container">
+        
+        </div>
+    </section>
+
+    <section>
+    <div class="container">        
+            </div>
+    </section>  
+
+    <section>
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <section>
+    <div class="container text-center">        
+        
+    </div>
+    </section>
+
+    <section>
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <section>
+    <div class="container">        
+        
+    </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+        
     </div>
     </section>
 

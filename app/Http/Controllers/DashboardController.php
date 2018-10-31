@@ -12,18 +12,18 @@ class DashboardController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    //  * @return void
+    //  */
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    // // /**
+    //  * Show the application dashboard.
+    //  *
+    //  * @return \Illuminate\Http\Response
+    //  */
     public function index()
     {
         return view('dashboard.index');
@@ -61,14 +61,34 @@ class DashboardController extends Controller
             'body' => 'required'
         ]);
 
-        if($request->hasFile('image')){
-            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+        if($request->hasFile('image1')){
+            $fileNameWithExt = $request->file('image1')->getClientOriginalName();
             $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            $extension = $request->file('image')->getClientOriginalExtension();
-            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
-            $path = $request->file('image')->storeAs('public/images', $fileNameToStore);
+            $extension = $request->file('image1')->getClientOriginalExtension();
+            $fileNameToStore1 = $fileName.'_'.time().'.'.$extension;
+            $path = $request->file('image1')->storeAs('public/images', $fileNameToStore1);
         }else{
-            $fileNameToStore = "noImage.png";
+            $fileNameToStore1 = "noImage.png";
+        }
+
+        if($request->hasFile('image2')){
+            $fileNameWithExt = $request->file('image2')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('image2')->getClientOriginalExtension();
+            $fileNameToStore2 = $fileName.'_'.time().'.'.$extension;
+            $path = $request->file('image2')->storeAs('public/images', $fileNameToStore2);
+        }else{
+            $fileNameToStore2 = "noImage.png";
+        }
+
+        if($request->hasFile('image3')){
+            $fileNameWithExt = $request->file('image3')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('image3')->getClientOriginalExtension();
+            $fileNameToStore3 = $fileName.'_'.time().'.'.$extension;
+            $path = $request->file('image3')->storeAs('public/images', $fileNameToStore3);
+        }else{
+            $fileNameToStore3 = "noImage.png";
         }
 
         $project = new Project;
@@ -77,7 +97,9 @@ class DashboardController extends Controller
         $project->extract = $request->input('extract');
         $project->summary = $request->input('summary');
         $project->body = $request->input('body');
-        $project->img_url = $fileNameToStore;
+        $project->img1 = $fileNameToStore1;
+        $project->img2 = $fileNameToStore2;
+        $project->img3 = $fileNameToStore3;
         $project->save();
         return redirect('/dashboard/add')->with('success', 'Project created successfully');
     }

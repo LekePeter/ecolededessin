@@ -16,8 +16,8 @@
                 @if($projects)
                     @foreach($projects as $project)     
                         <div class="col-xs-4 col-lg-4">
-                            <div class="card">
-                                <img class="card-img-top" src="storage/images/{{$project->img_url}}" alt="Card image cap" width="200" height="200">
+                            <div class="card" style="height: 50%;">
+                                <img class="card-img-top" src="storage/images/{{$project->img1}}" alt="Card image cap" width="200" height="200">
                                 <div class="card-body">
                                     <h4 class="card-title">{{str_limit($project->title, 50)}}</h4>
                                     <p class="card-text">{!!str_limit($project->body, 50)!!}</p>
