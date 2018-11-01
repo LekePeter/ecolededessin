@@ -20,7 +20,9 @@ class CreateProjectsTable extends Migration
             $table->string('extract');
             $table->string('summary');
             $table->mediumText('body');
-            $table->string('img_url');
+            $table->string('img1');
+            $table->string('img2');
+            $table->string('img3');
             $table->timestamps();
         });
     }

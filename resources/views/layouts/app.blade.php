@@ -16,7 +16,6 @@
         <meta name="description" content="We provide solutions from strategy development to implementation that delivers value to our clients in the areas of; market assessment, marketing plan &amp; strategy development, " />
         <meta name="generator" content="Joomla! - Open Source Content Management" />
         <title>Welcome to Ecole De Dessin Website</title>
-        <link rel="stylesheet" href="css/app.css">        
         <link href="http://ecolededessin.org/?view=featured" rel="canonical" />
         <link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
         <link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
@@ -25,6 +24,7 @@
         <link rel="stylesheet" href="css/css-e8e12.css" type="text/css" />
         <link rel="stylesheet" href="css/css-f9653.css" type="text/css" />
         <link rel="stylesheet" href="css/css-7f05b.css" type="text/css" />
+        <link rel="stylesheet" href="css/app.css">                
         <link rel="stylesheet" href="css/css-31c29.css" type="text/css" />
         <link rel="icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/main.css">    
@@ -83,7 +83,21 @@
     <body>
 <body>
     @include('inc.navbar')
-    @yield('content')
+    
+    <section id="t3-mainbody" class="container t3-mainbody">
+        <div class="row">
+            <div id="t3-content" class="t3-content span12"  data-default="span12">
+                <div class="main-content">
+                    <div id="system-message-container">
+                        <div id="system-message"></div>
+                    </div>
+                    <!-- CONTENT -->
+                        @yield('content')    
+                    <!-- //CONTENT -->
+                </div>
+            </div>
+        </div>
+    </section>
     @include('inc.footer')
     <script src="{{asset('js/app.js')}}"></script>
 </body>

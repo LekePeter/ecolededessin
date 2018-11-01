@@ -70,6 +70,12 @@
                     <a class="dropdown-item" href="{{url('dashboard/add')}}">Add</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard/message">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Message</span>
+                    </a>
+                </li>
             </ul>
         
             <div id="content-wrapper">

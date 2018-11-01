@@ -14,7 +14,7 @@ class AddSubtitleToProjects extends Migration
     public function up()
     {
         
-        Schema::table('projects', function ($table) {
+        Schema::table('projects1', function ($table) {
             $table->mediumText('subtitle1');
         });
     }

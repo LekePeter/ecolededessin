@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 use App\Project;
+use App\Contact;
 
 class DashboardController extends Controller
 {
@@ -102,5 +103,28 @@ class DashboardController extends Controller
         $project->img3 = $fileNameToStore3;
         $project->save();
         return redirect('/dashboard/add')->with('success', 'Project created successfully');
+    }
+
+    public function contact(Request $request)
+    {
+        $this->validate($request, [
+            'contact_name' => 'required',
+            'contact_subject' => 'required',
+            'contact_email' => 'required',
+            'contact_message' => 'required'
+        ]);
+
+        $contact = new Contact;
+        $contact->name = $request->input('contact_name');
+        $contact->subject = $request->input('contact_subject');
+        $contact->email = $request->input('contact_email');
+        $contact->message = $request->input('contact_message');        
+        $contact->save();
+        return redirect('/contact')->with('success', 'Message sent successfully');
+    }
+
+    public function mail(){
+        return view('dashboard.mail');
+        
     }
 }
